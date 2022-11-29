@@ -3,4 +3,4 @@ import { roll } from "/lib/roll.js";
 
 const args = minimist(process.argv.splice(2));
 
-let res = roll(args.sides, args.dice, args.rolls);
+console.log(JSON.stringify(roll(args.sides, args.dice, args.rolls)));
